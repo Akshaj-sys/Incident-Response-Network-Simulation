@@ -2,15 +2,15 @@
 
 **Objective**
 
-The goal of this incident-response simulation was to run a controlled, documented detection-and-response exercise inside an isolated virtual lab. The workflow demonstrates starting pfSense and Suricata, running a safe Scapy-based network simulation from a Kali VM against an Ubuntu target VM, capturing packets with Wireshark, observing alerts in Suricata, documenting the incident, and performing containment, analysis, and eradication.
+The goal of this incident response simulation was to run a controlled, documented detection-and-response exercise inside an isolated virtual lab. The workflow demonstrates starting pfSense and Suricata, running a safe Scapy-based network simulation from a Kali VM against an Ubuntu target VM, capturing packets with Wireshark, observing alerts in Suricata, documenting the incident, and performing containment, analysis, and eradication.
 
 **Skills Learned**
 
--Intrusion Detection Tool (Suricata) 
--Network Traffic Analysis 
--Incident Detection 
--JIRA & Google Docs (Documentation) 
--Wireshark 
+- Intrusion Detection Tool (Suricata) 
+- Network Traffic Analysis 
+- Incident Detection 
+- JIRA & Google Docs (Documentation) 
+- Wireshark 
 
 **Tools Used**
 
@@ -86,6 +86,11 @@ The goal of this incident-response simulation was to run a controlled, documente
    - Verify Suricata and Ubuntu networking are normal. Archive pcaps, logs, and screenshots.  
    - Complete incident documentation in Google Docs / JIRA and store artifacts in the `docs/` folders.
 
+**Network Diagram**
+This project successfully demonstrated an incident response simulation in an isolated virtual environment  
+<img width="1042" height="721" alt="Screenshot 2025-10-21 225533" src="https://github.com/user-attachments/assets/6228e0c5-f405-43e1-acd5-8ed453c98f2a" />
+
+
 **Conclusion**
 
 This incident-response simulation successfully demonstrated the end-to-end workflow of a contained cyber incident within an isolated lab. It validated the ability to generate and detect controlled network activity, observe alerts from Suricata, capture forensic packet evidence with Wireshark, and perform containment/eradication steps while maintaining an evidence trail. The exercise reinforced the IR lifecycle  preparation, detection, containment, analysis, eradication, and recovery in a reproducible, safe environment.
@@ -100,5 +105,5 @@ This incident-response simulation successfully demonstrated the end-to-end workf
 **Safety & Ethics**
 
 - All testing MUST be done in a fully isolated virtual lab (host-only/internal network) and on VMs you own or have explicit authorization to test.
-- Tests are intentionally low-impact (single packets or very small sequences); avoid loops, floods, or exploit payloads.
+- Tests are intentionally low-impact (single packets or very small sequences) avoid loops, floods, or exploit payloads.
 - Keep logs, pcaps, and screenshots secure and timestamped for reproducibility and reporting.
