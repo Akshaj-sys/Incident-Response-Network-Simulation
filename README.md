@@ -85,6 +85,8 @@ The goal of this incident response simulation was to run a controlled, documente
    - Terminate the Scapy process on Kali (`ps aux | grep scapy` → `kill -9 <PID>`) and stop any running captures.  
    - Verify Suricata and Ubuntu networking are normal. Archive pcaps, logs, and screenshots.  
    - Complete incident documentation in Google Docs / JIRA and store artifacts in the `docs/` folders.
+     
+   https://docs.google.com/document/d/19XuRLed3ZtLPsgTLUwNf1d1kkIH_GSsloxrK2E5Si_w/edit?usp=sharing
 
 **Network Diagram**
 This project successfully demonstrated an incident response simulation in an isolated virtual environment  
